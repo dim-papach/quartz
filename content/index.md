@@ -1,6 +1,6 @@
 ---
 title: "Hi, I'm Dimitris Papachristopoulos"
-author: "Dimitris "
+author: "Dimitris Papachristopoulos"
 ---
 
 # Welcome!
