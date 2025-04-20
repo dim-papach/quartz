@@ -17,8 +17,15 @@ jobs:
           submodules: recursive  # Critical for submodules
           fetch-depth: 0         # Required for proper Git history
           #token: ${{ secrets.GITHUB_TOKEN }}  # Needed for private submodules
+	  - name: Fix Nested Submodules
+  		run: |
+    		# Initialize parent submodule first
+    		git submodule update --init --recursive content/docs/thesis
 
-      # Step 2: Update all submodules (or specific ones)
+    		# Then update all submodules
+   			 submodule update --remote --recursive --merge
+     
+     # Step 2: Update all submodules (or specific ones)
       - name: Update Submodules
         run: |
           # Update all submodules to latest remote commit
