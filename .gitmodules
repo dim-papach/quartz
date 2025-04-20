@@ -1,6 +1,6 @@
 [submodule "content/docs/r_inla"]
 	path = content/docs/r_inla
-	url = https://github.com/dim-papach/r_inla
+	url = https://github.com/dim-papach/rinla_project
 
 
 [submodule "content/docs/thesis"]
