@@ -1,3 +1,11 @@
 [submodule "content/docs/r_inla"]
 	path = content/docs/r_inla
 	url = https://github.com/dim-papach/rinla_project
+
+[submodule "content/docs/thesis"]
+	path = content/docs/thesis
+	url = https://github.com/dim-papach/Research_paper_SFR
+
+[submodule "content/docs/thesis/images/reveal.js"]
+	path = content/docs/thesis/images/reveal.js
+	url = https://github.com/hakimel/reveal.js
