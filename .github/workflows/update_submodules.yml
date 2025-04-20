@@ -1,0 +1,43 @@
+name: Update Submodules
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Daily at midnight UTC
+  workflow_dispatch:     # Manual trigger
+  push:
+    branches: [ main ]   # Optional: Trigger on pushes to main
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout repo + submodules
+      - name: Checkout with Submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # Critical for submodules
+          fetch-depth: 0         # Required for proper Git history
+          #token: ${{ secrets.GITHUB_TOKEN }}  # Needed for private submodules
+
+      # Step 2: Update all submodules (or specific ones)
+      - name: Update Submodules
+        run: |
+          # Update all submodules to latest remote commit
+          git submodule update --remote --merge
+          
+          # Alternative: Update specific submodule only
+          # git submodule update --remote --merge content/external-docs
+
+          # Verify changes were detected
+          if git diff --exit-code --quiet; then
+            echo "No submodule updates found."
+            exit 0
+          fi
+
+      # Step 3: Commit and push changes
+      - name: Commit and Push Updates
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "chore(submodules): Auto-update [skip ci]" || echo "No changes to commit"
+          git push
