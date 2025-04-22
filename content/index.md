@@ -11,7 +11,7 @@ Currently, I work on two projects:
 - A CLI tool for interpolating missing data from astronomical images, using Bayesian methods, [[docs/r_inla/README.md]]
 - Modeling star formation histories, applying Bayesian methods, and digging into large astronomical datasets, to better understand how galaxies evolve over cosmic times. [[zezas]],[[docs/thesis/presentations/zezas]], [[docs/thesis/thesis.pdf]]
 
-I also love sharing knowledge and I am a teacher of STEM for people of ages and backgrounds! [[test.html]]
+I also love sharing knowledge and I am a teacher of STEM for people of ages and backgrounds! 
 
 If you're curious about my work, background, or collaborations, you've come to the right place!
 
