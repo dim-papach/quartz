@@ -9,7 +9,7 @@ I'm a researcher in astrophysics, with a passion for statistical analysis and ev
 
 Currently, I work on two projects:
 - A CLI tool for interpolating missing data from astronomical images, using Bayesian methods, [[docs/r_inla/README.md]]
-- Modeling star formation histories, applying Bayesian methods, and digging into large astronomical datasets, to better understand how galaxies evolve over cosmic times. [[docs/thesis/presentations/zezas#/title-slidedocs/thesis/thesis.html]], [[docs/thesis/thesis.pdf]]
+- Modeling star formation histories, applying Bayesian methods, and digging into large astronomical datasets, to better understand how galaxies evolve over cosmic times. [[zezas]],[[docs/thesis/presentations/zezas]], [[docs/thesis/thesis.pdf]]
 
 I also love sharing knowledge and I am a teacher of STEM for people of ages and backgrounds! [[test.html]]
 
