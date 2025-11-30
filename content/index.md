@@ -38,7 +38,8 @@ If you're curious about my work, background, or collaborations, you've come to t
 
 ## My Journey (Education)
 
-- **M.Sc. in Physics** – 🚧Under Construction🚧
+- **M.Sc. in Applied Mathematics and Data Science** – National Technical University of Athens, on going
+	 - Mathematical Modeling in Modern Technologies and Financial Engineering
 
 - **B.Sc. in Physics** – National Kapodistrian University of Athens, 2025
 	 - Bachelor thesis: [Analysis of observational data, to calculate the Delayed-Tau model parameters](https://github.com/dim-papach/Research_paper_SFR/blob/main/thesis.pdf)
